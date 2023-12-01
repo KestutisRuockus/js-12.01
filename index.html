@@ -4,20 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>12.01</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h2>Skaiciaus atspejimo zaidimas</h2>
-    <p>
-      <b>Taisykles:</b> Buvo sugeneruotas skaičius nuo 1 iki 20. Įveskite savo
-      spėjimą. Jei spėjimas buvo mažesnis arba didesnis nei sugeneruotas
-      skaičius, programa jums apie tai praneš. Iš viso turite
-      <b id="guess-count">6</b> spėjimus
-    </p>
-    <input id="guess-input" type="number" placeholder="Iveskite savo spejima" />
-    <button onclick="guessNumber()">Bandyti</button>
-    <p id="result">
-      Spejimas buvo netesingas. Skaicius yra mazesnis arba didesnis
-    </p>
-    <script src="script.js"></script>
+    <!-- script.js -->
+    <!-- <div>
+      <h2>Skaiciaus atspejimo zaidimas</h2>
+      <p>
+        <b>Taisykles:</b> Buvo sugeneruotas skaičius nuo 1 iki 20. Įveskite savo
+        spėjimą. Jei spėjimas buvo mažesnis arba didesnis nei sugeneruotas
+        skaičius, programa jums apie tai praneš. Iš viso turite
+        <b id="guess-count">6</b> spėjimus
+      </p>
+      <input
+        id="guess-input"
+        type="number"
+        placeholder="Iveskite savo spejima"
+      />
+      <button onclick="guessNumber()">Bandyti</button>
+      <p id="result">
+        Spejimas buvo netesingas. Skaicius yra mazesnis arba didesnis
+      </p>
+    </div> -->
+    <!-- <script src="script.js"></script> -->
+
+    <!-- task.js -->
+    <div class="container">
+      <div class="inputs">
+        <input id="first-number" type="number" placeholder="Įveskite skaičių">
+        <input id="second-number" type="number" placeholder="Įveskite skaičių">
+      </div>
+      <div class="buttons">
+        <button onclick="sum()">+</button>
+        <button onclick="subtract()">-</button>
+        <button onclick="multiply()">X</button>
+        <button onclick="divide()">/</button>
+        <button onclick="square()">x<sup>y</sup></button>
+      </div>
+      <div class="text">
+        <p id="shown-text">50</p>
+      </div>
+    <script src="calculator.js"></script>
   </body>
 </html>
