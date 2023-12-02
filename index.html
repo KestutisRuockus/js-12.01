@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>12.01</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="quiz.css" />
   </head>
   <body>
     <!-- script.js -->
@@ -29,10 +30,14 @@
     <!-- <script src="script.js"></script> -->
 
     <!-- task.js -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="inputs">
-        <input id="first-number" type="number" placeholder="Įveskite skaičių">
-        <input id="second-number" type="number" placeholder="Įveskite skaičių">
+        <input id="first-number" type="number" placeholder="Įveskite skaičių" />
+        <input
+          id="second-number"
+          type="number"
+          placeholder="Įveskite skaičių"
+        />
       </div>
       <div class="buttons">
         <button onclick="sum()">+</button>
@@ -42,8 +47,89 @@
         <button onclick="square()">x<sup>y</sup></button>
       </div>
       <div class="text">
-        <p id="shown-text">50</p>
+        <p id="shown-text"></p>
       </div>
-    <script src="calculator.js"></script>
+    </div> -->
+    <!-- quiz.js -->
+    <div>
+      <h1>QUIZ!</h1>
+    </div>
+    <div class="container">
+      <!-- questio 1 -->
+      <div class="table">
+        <div class="question">What is the capital of France?</div>
+        <div onclick="getId(this)" id="berlin" class="answer">
+          <b>A:</b> Berlin
+        </div>
+        <div onclick="getId(this)" id="london" class="answer">
+          <b>B:</b> London
+        </div>
+        <div onclick="getId(this)" id="paris" class="answer">
+          <b>C:</b> Paris
+        </div>
+        <div class="correct-answer">Correct answer is A: Paris</div>
+      </div>
+      <!-- questio 2 -->
+      <div class="table">
+        <div class="question">How many continents are there on Earth?</div>
+        <div onclick="getId(this)" id="five" class="answer"><b>A:</b> 5</div>
+        <div onclick="getId(this)" id="seven" class="answer"><b>B:</b> 7</div>
+        <div onclick="getId(this)" id="six" class="answer"><b>C:</b> 6</div>
+        <div class="correct-answer">Correct answer is B: 7</div>
+      </div>
+      <!-- questio 3 -->
+      <div class="table">
+        <div class="question">Which planet is known as the Red Planet?</div>
+        <div onclick="getId(this)" id="mars" class="answer"><b>A:</b> Mars</div>
+        <div onclick="getId(this)" id="jupiter" class="answer">
+          <b>B:</b> Jupiter
+        </div>
+        <div onclick="getId(this)" id="saturn" class="answer">
+          <b>C:</b> Saturn
+        </div>
+        <div class="correct-answer">Correct answer is A: Mars</div>
+      </div>
+      <!-- questio 4 -->
+      <div class="table">
+        <div class="question">
+          What gas do plants breathe in that humans and animals breathe out?
+        </div>
+        <div onclick="getId(this)" id="oxygen" class="answer">
+          <b>A:</b> Oxygen
+        </div>
+        <div onclick="getId(this)" id="carbon-dioxide" class="answer">
+          <b>B:</b> Carbon Dioxide
+        </div>
+        <div onclick="getId(this)" id="nitrogen" class="answer">
+          <b>C:</b> Nitrogen
+        </div>
+        <div class="correct-answer">Correct answer is B: Carbon Dioxide</div>
+      </div>
+      <!-- questio 5 -->
+      <div class="table">
+        <div class="question">What is the largest mammal in the world?</div>
+        <div onclick="getId(this)" id="elephant" class="answer">
+          <b>A:</b> Elephant
+        </div>
+        <div onclick="getId(this)" id="blue-whale" class="answer">
+          <b>B:</b> Blue Whale
+        </div>
+        <div onclick="getId(this)" id="girafe" class="answer">
+          <b>C:</b> Giraffe
+        </div>
+        <div class="correct-answer">Correct answer is B: Blue Whale</div>
+      </div>
+      <div class="btn">
+        <div class="result">
+          Jūs surinkote <span id="result">5</span> tšk. iš 5
+        </div>
+        <button onclick="checkAnswers()" class="get-answers">
+          Get Answers
+        </button>
+        <button onclick="restarGame()" class="restart">Restart</button>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+    <!-- <script src="calculator.js"></script> -->
   </body>
 </html>

@@ -1,0 +1,96 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container .table {
+  padding-top: 15px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container div {
+  background-color: rgb(255, 244, 244);
+  margin: 10px 30px;
+  border-radius: 15px;
+}
+
+.container .question {
+  width: 300px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container .answer:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.container .selected {
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.container .answer {
+  padding: 5px 10px;
+}
+
+.container .correct {
+  background-color: lightgreen;
+}
+
+.container .wrong {
+  background-color: tomato;
+}
+.container .btn {
+  height: 200px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+button {
+  padding: 15px 0;
+  width: 70%;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: cornflowerblue;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.container .get-answers {
+  display: block;
+}
+.container .restart {
+  display: none;
+}
+
+.container .correct-answer {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+.result {
+  display: none;
+  font-size: 18px;
+}
